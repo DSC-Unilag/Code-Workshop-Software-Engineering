@@ -8,20 +8,20 @@ import sys
 
 # Complete the plusMinus function below.
 def plusMinus(arr): 
-    neg = []
-    pos = []
-    zer = []
+    neg = 0
+    pos = 0
+    zer = 0
     
     for i in arr:
         if i < 0:
-            neg.append(i)
+            neg += 1
         elif i == 0:
-            zer.append(i)
-        else: pos.append(i)
+            zer += 1
+        else: pos += 1
         
-    a = (len(pos))/n
-    b = (len(neg))/n
-    c = (len(zer))/n
+    a = pos/n
+    b = neg/n
+    c = zer/n
     print (str.format('{0:.6f}', a))
     print (str.format('{0:.6f}', b))
     print (str.format('{0:.6f}', c))
